@@ -1,0 +1,240 @@
+<!-- <div class="nav-items">
+    <div class="nav-item">
+      <fa-icon [icon]="faDashboard"></fa-icon>
+      <span>Dashboard</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faLocation"></fa-icon>
+      <span>Team Structure</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faShop"></fa-icon>
+      <span>AutoMation</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Reports</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faMoneyBill"></fa-icon>
+      <span>Lead</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faChartBar"></fa-icon>
+      <span>Email & SMS</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faContactBook"></fa-icon>
+      <span>Branches</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faHand"></fa-icon>
+      <span>Source</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Contact</span>
+    </div>
+
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Followup Report</span>
+    </div>
+
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Task</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Track User</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Mobile Template</span>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Display Settings</span>
+    </div>
+
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>Payment</span>
+    </div>
+
+    <div class="nav-item">
+      <fa-icon [icon]="faBox"></fa-icon>
+      <span>IVR Leads</span>
+    </div>
+
+
+
+
+
+  </div>
+   -->
+
+
+
+
+
+   <!-- <div class="nav-items">
+    <div class="nav-item">
+        <fa-icon [icon]="faDashboard"></fa-icon>
+        <span>Dashboard</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faLocation"></fa-icon>
+        <span>Team Structure</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faShop"></fa-icon>
+        <span>Automation</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Reports</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faMoneyBill"></fa-icon>
+        <span>Lead</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faChartBar"></fa-icon>
+        <span>Email & SMS</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faContactBook"></fa-icon>
+        <span>Branches</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faHand"></fa-icon>
+        <span>Source</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Contact</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Followup Report</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Task</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Track User</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Mobile Template</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Display Settings</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Payment</span>      
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>IVR Leads</span>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+<!-- <div class="nav-items">
+    <div class="nav-item">
+        <fa-icon [icon]="faDashboard"></fa-icon>
+        <span>Dashboard</span>
+    </div> -->
+    <div class="nav-items">
+      <div class="nav-item" routerLink="/checkroute" routerLinkActive="active">
+       
+
+          <fa-icon [icon]="faDashboard"></fa-icon>
+          <span>Dashboard</span>
+      </div>
+      <!-- Add other navigation links as needed -->
+  
+    <!-- <div class="nav-item">
+        <fa-icon [icon]="faLocation"></fa-icon>
+        <span>Team Structure</span>
+    </div> -->
+
+    <div class="nav-item" (click)="toggleDropdown()">
+      <fa-icon [icon]="faLocation"></fa-icon>
+      <span>Team Structure</span>
+      <div class="dropdown" *ngIf="isDropdownOpen">
+        <!-- Dropdown content goes here -->
+        <a href="/checkroute">Followup</a>
+        <a href="#">Call Back</a>
+        <a href="#">Pending</a>
+      </div>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faShop"></fa-icon>
+        <span>Automation</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Reports</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faMoneyBill"></fa-icon>
+        <span>Lead</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faChartBar"></fa-icon>
+        <span>Email & SMS</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faContactBook"></fa-icon>
+        <span>Branches</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faHand"></fa-icon>
+        <span>Source</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Contact</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Followup Report</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Task</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Track User</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Mobile Template</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Display Settings</span>
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>Payment</span>      
+    </div>
+    <div class="nav-item">
+        <fa-icon [icon]="faBox"></fa-icon>
+        <span>IVR Leads</span>
+    </div>
+</div>
